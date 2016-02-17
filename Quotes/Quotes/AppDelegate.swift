@@ -22,6 +22,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.image = NSImage(named: "StatusBarButtonImage")
             button.action = Selector("printQuote:")
         }
+        
+        let menu = NSMenu()
+        
+        menu.addItem(NSMenuItem(title: "Print Quote", action: Selector("printQuote:"), keyEquivalent: "P"))
+        menu.addItem(NSMenuItem.separatorItem())
+        
+        //terminate: is an action method defined in the shared application instance.  
+        //The action gets sent up the responder chain until it arrives at the shared application, 
+        //in which case the application quits.
+        menu.addItem(NSMenuItem(title: "Quit Quotes", action: Selector("terminate:"), keyEquivalent: "q"))
+        
+        statusItem.menu = menu
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
