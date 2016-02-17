@@ -10,6 +10,8 @@
 		9642B5901C749FCF009256BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9642B58F1C749FCF009256BE /* AppDelegate.swift */; };
 		9642B5921C749FCF009256BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9642B5911C749FCF009256BE /* Assets.xcassets */; };
 		9642B5951C749FCF009256BE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9642B5931C749FCF009256BE /* MainMenu.xib */; };
+		9642B59E1C74ABE8009256BE /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9642B59C1C74ABE8009256BE /* QuotesViewController.swift */; };
+		9642B59F1C74ABE8009256BE /* QuotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9642B59D1C74ABE8009256BE /* QuotesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		9642B5911C749FCF009256BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9642B5941C749FCF009256BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9642B5961C749FCF009256BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9642B59C1C74ABE8009256BE /* QuotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		9642B59D1C74ABE8009256BE /* QuotesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuotesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				9642B58F1C749FCF009256BE /* AppDelegate.swift */,
+				9642B59C1C74ABE8009256BE /* QuotesViewController.swift */,
+				9642B59D1C74ABE8009256BE /* QuotesViewController.xib */,
 				9642B5911C749FCF009256BE /* Assets.xcassets */,
 				9642B5931C749FCF009256BE /* MainMenu.xib */,
 				9642B5961C749FCF009256BE /* Info.plist */,
@@ -116,6 +122,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9642B59F1C74ABE8009256BE /* QuotesViewController.xib in Resources */,
 				9642B5921C749FCF009256BE /* Assets.xcassets in Resources */,
 				9642B5951C749FCF009256BE /* MainMenu.xib in Resources */,
 			);
@@ -129,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9642B5901C749FCF009256BE /* AppDelegate.swift in Sources */,
+				9642B59E1C74ABE8009256BE /* QuotesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +277,7 @@
 				9642B59B1C749FCF009256BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
