@@ -7,6 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="QuotesViewController" customModule="Quotes" customModuleProvider="target">
             <connections>
+                <outlet property="textLabel" destination="XR7-rg-iRk" id="zHd-fm-7J4"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -16,36 +17,69 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BEZ-4B-cB8">
-                    <rect key="frame" x="14" y="17" width="33" height="237"/>
-                    <buttonCell key="cell" type="bevel" title="&lt;" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AaY-WG-cdA">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                </button>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mjp-Nm-lsm">
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mjp-Nm-lsm">
                     <rect key="frame" x="429" y="17" width="33" height="237"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="29" id="Plh-ty-Tel"/>
+                    </constraints>
                     <buttonCell key="cell" type="bevel" title="&gt;" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AAr-p0-hSh">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="goRight:" target="-2" id="RKq-be-YkD"/>
+                    </connections>
                 </button>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XR7-rg-iRk">
-                    <rect key="frame" x="51" y="105" width="374" height="40"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="1Ka-PO-GDg">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XR7-rg-iRk">
+                    <rect key="frame" x="55" y="105" width="370" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="xOw-t4-KjS"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="1Ka-PO-GDg">
                         <font key="font" metaFont="system" size="16"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dfy-Vb-TV3">
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dfy-Vb-TV3">
                     <rect key="frame" x="182" y="15" width="113" height="32"/>
                     <buttonCell key="cell" type="push" title="Quit Quotes" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JDc-OK-bPy">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="quit:" target="-2" id="JtA-ce-CAd"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BEZ-4B-cB8">
+                    <rect key="frame" x="18" y="17" width="36" height="237"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="k72-ZP-iSB"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" title="&lt;" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AaY-WG-cdA">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="goLeft:" target="-2" id="Zao-tj-mVN"/>
+                    </connections>
                 </button>
             </subviews>
+            <constraints>
+                <constraint firstItem="dfy-Vb-TV3" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" constant="-1.5" id="2SF-lS-ffs"/>
+                <constraint firstItem="BEZ-4B-cB8" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="8gP-ge-UcP"/>
+                <constraint firstAttribute="bottom" secondItem="BEZ-4B-cB8" secondAttribute="bottom" constant="20" id="Drg-eA-fve"/>
+                <constraint firstItem="XR7-rg-iRk" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="127" id="IVx-a3-i0x"/>
+                <constraint firstAttribute="bottom" secondItem="dfy-Vb-TV3" secondAttribute="bottom" constant="22" id="KH7-nr-1dq"/>
+                <constraint firstItem="mjp-Nm-lsm" firstAttribute="leading" secondItem="XR7-rg-iRk" secondAttribute="trailing" constant="8" id="NZR-FP-KyC"/>
+                <constraint firstItem="BEZ-4B-cB8" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="ODP-nz-d9R"/>
+                <constraint firstItem="XR7-rg-iRk" firstAttribute="leading" secondItem="BEZ-4B-cB8" secondAttribute="trailing" constant="5" id="P4W-zN-LYY"/>
+                <constraint firstAttribute="bottom" secondItem="mjp-Nm-lsm" secondAttribute="bottom" constant="20" id="eQE-Vd-2Oc"/>
+                <constraint firstItem="mjp-Nm-lsm" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="nSq-9g-qq6"/>
+                <constraint firstAttribute="bottom" secondItem="XR7-rg-iRk" secondAttribute="bottom" constant="105" id="sjE-ho-USr"/>
+                <constraint firstItem="XR7-rg-iRk" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="tXT-Gy-acr"/>
+                <constraint firstItem="BEZ-4B-cB8" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="yVp-cK-cQT"/>
+            </constraints>
         </customView>
     </objects>
 </document>

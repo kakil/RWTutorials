@@ -16,6 +16,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSSquareStatusItemLength)
 
     let popover = NSPopover()
+    
+    var eventMonitor: EventMonitor?
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         
@@ -26,17 +28,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         popover.contentViewController = QuotesViewController(nibName: "QuotesViewController", bundle: nil)
         
-//        let menu = NSMenu()
-//        
-//        menu.addItem(NSMenuItem(title: "Print Quote", action: Selector("printQuote:"), keyEquivalent: "P"))
-//        menu.addItem(NSMenuItem.separatorItem())
-//        
-//        //terminate: is an action method defined in the shared application instance.  
-//        //The action gets sent up the responder chain until it arrives at the shared application, 
-//        //in which case the application quits.
-//        menu.addItem(NSMenuItem(title: "Quit Quotes", action: Selector("terminate:"), keyEquivalent: "q"))
-//        
-//        statusItem.menu = menu
+        eventMonitor = EventMonitor(mask: [.LeftMouseDownMask, .RightMouseDownMask]) {
+            [unowned self] event in
+            if self.popover.shown {
+                self.closePopover(event)
+            }
+        }
+        
+        eventMonitor?.start()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -47,10 +46,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if let button = statusItem.button {
             popover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: NSRectEdge.MinY)
         }
+        
+        eventMonitor?.start()
     }
     
     func closePopover(sender: AnyObject?) {
         popover.performClose(sender)
+        eventMonitor?.stop()
     }
     
     func togglePopover(sender: AnyObject?) {

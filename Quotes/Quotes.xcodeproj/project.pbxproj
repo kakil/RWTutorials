@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		960FACFA1C75FCA100A56B32 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FACF91C75FCA100A56B32 /* EventMonitor.swift */; };
 		9642B5901C749FCF009256BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9642B58F1C749FCF009256BE /* AppDelegate.swift */; };
 		9642B5921C749FCF009256BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9642B5911C749FCF009256BE /* Assets.xcassets */; };
 		9642B5951C749FCF009256BE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9642B5931C749FCF009256BE /* MainMenu.xib */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		960FACF91C75FCA100A56B32 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		9642B58C1C749FCF009256BE /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9642B58F1C749FCF009256BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9642B5911C749FCF009256BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,8 +60,9 @@
 			children = (
 				9642B58F1C749FCF009256BE /* AppDelegate.swift */,
 				9642B59C1C74ABE8009256BE /* QuotesViewController.swift */,
-				9642B5A01C74AF22009256BE /* Quote.swift */,
 				9642B59D1C74ABE8009256BE /* QuotesViewController.xib */,
+				960FACF91C75FCA100A56B32 /* EventMonitor.swift */,
+				9642B5A01C74AF22009256BE /* Quote.swift */,
 				9642B5911C749FCF009256BE /* Assets.xcassets */,
 				9642B5931C749FCF009256BE /* MainMenu.xib */,
 				9642B5961C749FCF009256BE /* Info.plist */,
@@ -141,6 +144,7 @@
 				9642B5901C749FCF009256BE /* AppDelegate.swift in Sources */,
 				9642B5A11C74AF22009256BE /* Quote.swift in Sources */,
 				9642B59E1C74ABE8009256BE /* QuotesViewController.swift in Sources */,
+				960FACFA1C75FCA100A56B32 /* EventMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
