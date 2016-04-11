@@ -1,0 +1,14 @@
+# Ignore Finder's stuff
+*.DS_Store
+
+# Ignore Xcode's user data
+**/xcuserdata/
+
+# Ingore Xcode's shared data (checkout records sometimes cause conflicts)
+# **/xcshareddata/
+
+# Ignore fetched pods (we manage pods manually)
+Pods/
+
+# Ignore VIM's swaps
+**/*.sw?
