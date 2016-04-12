@@ -65,21 +65,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="279" width="210" height="42"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtz-9f-Z7v" customClass="ProgressWheel" customModule="PaintCode" customModuleProvider="target">
+                                <rect key="frame" x="225" y="225" width="150" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ETP-ls-mkM"/>
+                                    <constraint firstAttribute="width" constant="150" id="cXW-Cd-Rlk"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="P19-32-rMi">
+                                <rect key="frame" x="223" y="383" width="154" height="31"/>
+                                <connections>
+                                    <action selector="updateProgressWheel:" destination="8rJ-Kc-sve" eventType="valueChanged" id="ruP-zo-B7k"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="dtz-9f-Z7v" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="HRL-d5-HLu"/>
+                            <constraint firstItem="P19-32-rMi" firstAttribute="trailing" secondItem="dtz-9f-Z7v" secondAttribute="trailing" id="RwC-sf-4bC"/>
+                            <constraint firstItem="dtz-9f-Z7v" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="ela-GL-KVJ"/>
+                            <constraint firstItem="P19-32-rMi" firstAttribute="leading" secondItem="dtz-9f-Z7v" secondAttribute="leading" id="gdD-59-2sU"/>
+                            <constraint firstItem="P19-32-rMi" firstAttribute="top" secondItem="dtz-9f-Z7v" secondAttribute="bottom" constant="8" id="hOq-6e-xsM"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Control" image="ProgressIcon" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="progressWheel" destination="dtz-9f-Z7v" id="RtQ-T9-4HM"/>
+                        <outlet property="slider" destination="P19-32-rMi" id="RQ3-pF-d6f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

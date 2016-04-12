@@ -9,5 +9,20 @@
 import UIKit
 
 class ControlViewcontroller: UIViewController {
+    
+    @IBOutlet weak var progressWheel: ProgressWheel?
+    @IBOutlet weak var slider: UISlider?
+    
+    override func viewDidLoad() {
+        progressWheel?.progressWheelAngle = 0.5
+    }
+    
+    @IBAction func updateProgressWheel(sender: UISlider) {
+        
+        print("\(sender.value)")
+    
+        progressWheel?.progressWheelAngle = CGFloat(self.slider!.value)
+        progressWheel?.setNeedsDisplay()
+    }
 }
 

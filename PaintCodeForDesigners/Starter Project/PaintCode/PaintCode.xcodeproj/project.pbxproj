@@ -18,6 +18,8 @@
 		96BDC41F1CBBE59000F9FB31 /* PaintCodeTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BDC41E1CBBE59000F9FB31 /* PaintCodeTutorial.swift */; };
 		96BDC4211CBBE5A300F9FB31 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BDC4201CBBE5A300F9FB31 /* Stopwatch.swift */; };
 		96BDC4231CBBE63A00F9FB31 /* StopwatchHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BDC4221CBBE63A00F9FB31 /* StopwatchHand.swift */; };
+		96BDC4261CBC306700F9FB31 /* ProgressWheelStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BDC4251CBC306700F9FB31 /* ProgressWheelStyleKit.swift */; };
+		96BDC4281CBC313300F9FB31 /* ProgressWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BDC4271CBC313300F9FB31 /* ProgressWheel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		96BDC41E1CBBE59000F9FB31 /* PaintCodeTutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintCodeTutorial.swift; sourceTree = "<group>"; };
 		96BDC4201CBBE5A300F9FB31 /* Stopwatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		96BDC4221CBBE63A00F9FB31 /* StopwatchHand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchHand.swift; sourceTree = "<group>"; };
+		96BDC4251CBC306700F9FB31 /* ProgressWheelStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressWheelStyleKit.swift; sourceTree = "<group>"; };
+		96BDC4271CBC313300F9FB31 /* ProgressWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressWheel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +91,12 @@
 		55F43C211A6893CF00AA5D27 /* PaintCode */ = {
 			isa = PBXGroup;
 			children = (
+				96BDC4251CBC306700F9FB31 /* ProgressWheelStyleKit.swift */,
 				55F43C241A6893CF00AA5D27 /* AppDelegate.swift */,
 				96BDC41E1CBBE59000F9FB31 /* PaintCodeTutorial.swift */,
 				96BDC4201CBBE5A300F9FB31 /* Stopwatch.swift */,
 				96BDC4221CBBE63A00F9FB31 /* StopwatchHand.swift */,
+				96BDC4271CBC313300F9FB31 /* ProgressWheel.swift */,
 				55F43C461A68959500AA5D27 /* Resources */,
 				55F43C471A6895A000AA5D27 /* View Controllers */,
 				55F43C221A6893CF00AA5D27 /* Supporting Files */,
@@ -245,8 +251,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				55F43C291A6893CF00AA5D27 /* ControlViewController.swift in Sources */,
+				96BDC4261CBC306700F9FB31 /* ProgressWheelStyleKit.swift in Sources */,
 				96BDC4211CBBE5A300F9FB31 /* Stopwatch.swift in Sources */,
 				55F43C251A6893CF00AA5D27 /* AppDelegate.swift in Sources */,
+				96BDC4281CBC313300F9FB31 /* ProgressWheel.swift in Sources */,
 				55F43C491A6895BB00AA5D27 /* ArrowViewController.swift in Sources */,
 				55F43C271A6893CF00AA5D27 /* AssetViewController.swift in Sources */,
 				96BDC41F1CBBE59000F9FB31 /* PaintCodeTutorial.swift in Sources */,
