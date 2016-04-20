@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Order-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="OrderViewController" customModule="ObjectiveTea" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="t69-DG-roe" userLabel="Order Information">
+                                <rect key="frame" x="20" y="30" width="560" height="150"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gXJ-F9-Mnf" userLabel="Order Details">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="142"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Milk Tea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pTs-xb-5NU" userLabel="Flavor Name">
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="41"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                                <color key="textColor" red="0.84313725490196079" green="0.64313725490196072" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EFX-6X-CEU" userLabel="Beverage Size">
+                                                <rect key="frame" x="0.0" y="61" width="123" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="YEd-NC-inD"/>
+                                                </constraints>
+                                                <segments>
+                                                    <segment title="Regular"/>
+                                                    <segment title="Large"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="sizeChange:" destination="9pv-A4-QxB" eventType="valueChanged" id="XBX-8L-dwQ"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kHK-Z6-Eei" userLabel="Opt-out of bubbles">
+                                                <rect key="frame" x="0.0" y="111" width="130" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bubbles?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9M6-8a-MwI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="71" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="71" id="2Op-oR-hbT"/>
+                                                            <constraint firstAttribute="height" constant="60" id="xg8-qg-SHI"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="xg8-qg-SHI"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ra3-s0-36A">
+                                                        <rect key="frame" x="81" y="0.0" width="51" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="3jw-Xp-ABj"/>
+                                                        </constraints>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="3jw-Xp-ABj"/>
+                                                            </mask>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="toggleBubbles:" destination="9pv-A4-QxB" eventType="valueChanged" id="dMp-MP-aAb"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52u-2H-oQk" userLabel="Bubble Tea Cup" customClass="BubbleTeaCup" customModule="ObjectiveTea" customModuleProvider="target">
+                                        <rect key="frame" x="290" y="0.0" width="270" height="150"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="xCo-Zz-RaZ" userLabel="Cup Height"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Lc-yw-oGH">
+                                <rect key="frame" x="0.0" y="190" width="600" height="410"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="afW-nk-Rlb">
+                                    <size key="itemSize" width="100" height="92"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="60"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="bky-Ar-9uA" customClass="FlavorCell" customModule="ObjectiveTea" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="92"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ivl-SV-aZb">
+                                                    <rect key="frame" x="24" y="8" width="51" height="51"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Ivl-SV-aZb" secondAttribute="height" multiplier="1:1" id="pQp-99-QxK"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="30"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="N6Y-jf-4g5">
+                                                    <rect key="frame" x="8" y="64" width="84" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="N6Y-jf-4g5" firstAttribute="bottom" secondItem="bky-Ar-9uA" secondAttribute="bottomMargin" id="L8o-XZ-YVO"/>
+                                            <constraint firstItem="N6Y-jf-4g5" firstAttribute="leading" secondItem="bky-Ar-9uA" secondAttribute="leadingMargin" id="N6E-yo-W95"/>
+                                            <constraint firstItem="N6Y-jf-4g5" firstAttribute="top" secondItem="Ivl-SV-aZb" secondAttribute="bottom" constant="5" id="kWQ-zP-duL"/>
+                                            <constraint firstItem="N6Y-jf-4g5" firstAttribute="trailing" secondItem="bky-Ar-9uA" secondAttribute="trailingMargin" id="q5A-VX-HzO"/>
+                                            <constraint firstItem="Ivl-SV-aZb" firstAttribute="top" secondItem="bky-Ar-9uA" secondAttribute="topMargin" id="t06-cf-gsn"/>
+                                            <constraint firstItem="Ivl-SV-aZb" firstAttribute="centerX" secondItem="bky-Ar-9uA" secondAttribute="centerX" id="ysZ-ei-Gc7"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="flavorColor" destination="Ivl-SV-aZb" id="AOv-Ui-kGn"/>
+                                            <outlet property="flavorName" destination="N6Y-jf-4g5" id="ONI-wH-wff"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="footer" id="54Z-u6-V8o">
+                                    <rect key="frame" x="0.0" y="92" width="600" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="uGV-Re-GSO"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="XC6-HC-NG2"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="t69-DG-roe" secondAttribute="trailing" id="8nb-OI-xfh"/>
+                            <constraint firstItem="t69-DG-roe" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="10" id="DVI-Cy-Ysh"/>
+                            <constraint firstItem="3Lc-yw-oGH" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="G34-pL-yiv"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="3Lc-yw-oGH" secondAttribute="bottom" id="O9F-fK-ZBa"/>
+                            <constraint firstAttribute="trailing" secondItem="3Lc-yw-oGH" secondAttribute="trailing" id="d5I-jW-VGA"/>
+                            <constraint firstItem="t69-DG-roe" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="seE-1z-RLq"/>
+                            <constraint firstItem="gXJ-F9-Mnf" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" multiplier="0.5" constant="-10" id="smM-tb-dEl"/>
+                            <constraint firstItem="3Lc-yw-oGH" firstAttribute="top" secondItem="t69-DG-roe" secondAttribute="bottom" constant="10" id="wcY-cJ-xZh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Order" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="bubbleTeaCup" destination="52u-2H-oQk" id="oG3-B8-Djn"/>
+                        <outlet property="cupHeight" destination="xCo-Zz-RaZ" id="wfV-JR-ZGT"/>
+                        <outlet property="flavorName" destination="pTs-xb-5NU" id="ROG-IJ-0G4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Stores-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="StoresViewController" customModule="ObjectiveTea" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TBV-oc-2I7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="3z9-2m-eF4"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TBV-oc-2I7" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="67h-dT-gsF"/>
+                            <constraint firstItem="TBV-oc-2I7" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" id="ACp-rx-87g"/>
+                            <constraint firstAttribute="trailing" secondItem="TBV-oc-2I7" secondAttribute="trailing" id="MG1-c0-EBh"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="TBV-oc-2I7" secondAttribute="bottom" id="Tpr-0s-m8Z"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Stores" image="FoldOutMap-O" id="cPa-gy-q4n">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="FoldOutMap"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="mapView" destination="TBV-oc-2I7" id="jTR-IX-VT2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" customClass="TabBarController" customModule="ObjectiveTea" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FoldOutMap" width="28" height="28"/>
+        <image name="FoldOutMap-O" width="28" height="28"/>
+        <image name="first" width="30" height="30"/>
+    </resources>
+    <color key="tintColor" red="0.0" green="0.40784313725490196" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+</document>

@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC85E8921CB32E11007448DF /* Flavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85E8911CB32E11007448DF /* Flavor.swift */; };
+		FC85E8941CB331B2007448DF /* FlavorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC85E8931CB331B2007448DF /* FlavorCell.swift */; };
+		FCA8BB8A1CB1F970003C3652 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA8BB891CB1F970003C3652 /* AppDelegate.swift */; };
+		FCA8BB911CB1F970003C3652 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA8BB8F1CB1F970003C3652 /* Main.storyboard */; };
+		FCA8BB931CB1F970003C3652 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA8BB921CB1F970003C3652 /* Assets.xcassets */; };
+		FCA8BB961CB1F970003C3652 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA8BB941CB1F970003C3652 /* LaunchScreen.storyboard */; };
+		FCA8BB9E1CB1F9AE003C3652 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA8BB9D1CB1F9AE003C3652 /* OrderViewController.swift */; };
+		FCA8BBA01CB1F9CF003C3652 /* BubbleTeaCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA8BB9F1CB1F9CF003C3652 /* BubbleTeaCup.swift */; };
+		FCA8BBA21CB1F9F9003C3652 /* StoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA8BBA11CB1F9F8003C3652 /* StoresViewController.swift */; };
+		FCA8BBA41CB1FA0E003C3652 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA8BBA31CB1FA0E003C3652 /* MapKit.framework */; };
+		FCA8BBAB1CB2119B003C3652 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA8BBAA1CB2119B003C3652 /* TabBarController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FC85E8911CB32E11007448DF /* Flavor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flavor.swift; sourceTree = "<group>"; };
+		FC85E8931CB331B2007448DF /* FlavorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlavorCell.swift; sourceTree = "<group>"; };
+		FCA8BB861CB1F970003C3652 /* ObjectiveTea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveTea.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA8BB891CB1F970003C3652 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCA8BB901CB1F970003C3652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCA8BB921CB1F970003C3652 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCA8BB951CB1F970003C3652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCA8BB971CB1F970003C3652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCA8BB9D1CB1F9AE003C3652 /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		FCA8BB9F1CB1F9CF003C3652 /* BubbleTeaCup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleTeaCup.swift; sourceTree = "<group>"; };
+		FCA8BBA11CB1F9F8003C3652 /* StoresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoresViewController.swift; sourceTree = "<group>"; };
+		FCA8BBA31CB1FA0E003C3652 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FCA8BBAA1CB2119B003C3652 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCA8BB831CB1F970003C3652 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCA8BBA41CB1FA0E003C3652 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCA8BB7D1CB1F970003C3652 = {
+			isa = PBXGroup;
+			children = (
+				FCA8BBA31CB1FA0E003C3652 /* MapKit.framework */,
+				FCA8BB881CB1F970003C3652 /* ObjectiveTea */,
+				FCA8BB871CB1F970003C3652 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCA8BB871CB1F970003C3652 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCA8BB861CB1F970003C3652 /* ObjectiveTea.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCA8BB881CB1F970003C3652 /* ObjectiveTea */ = {
+			isa = PBXGroup;
+			children = (
+				FCA8BB891CB1F970003C3652 /* AppDelegate.swift */,
+				FCA8BBAA1CB2119B003C3652 /* TabBarController.swift */,
+				FCA8BB9D1CB1F9AE003C3652 /* OrderViewController.swift */,
+				FC85E8931CB331B2007448DF /* FlavorCell.swift */,
+				FCA8BBA11CB1F9F8003C3652 /* StoresViewController.swift */,
+				FCA8BB9F1CB1F9CF003C3652 /* BubbleTeaCup.swift */,
+				FC85E8911CB32E11007448DF /* Flavor.swift */,
+				FCA8BB8F1CB1F970003C3652 /* Main.storyboard */,
+				FCA8BB921CB1F970003C3652 /* Assets.xcassets */,
+				FCA8BB941CB1F970003C3652 /* LaunchScreen.storyboard */,
+				FCA8BB971CB1F970003C3652 /* Info.plist */,
+			);
+			path = ObjectiveTea;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCA8BB851CB1F970003C3652 /* ObjectiveTea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCA8BB9A1CB1F970003C3652 /* Build configuration list for PBXNativeTarget "ObjectiveTea" */;
+			buildPhases = (
+				FCA8BB821CB1F970003C3652 /* Sources */,
+				FCA8BB831CB1F970003C3652 /* Frameworks */,
+				FCA8BB841CB1F970003C3652 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectiveTea;
+			productName = ObjectiveTea;
+			productReference = FCA8BB861CB1F970003C3652 /* ObjectiveTea.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCA8BB7E1CB1F970003C3652 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Razeware, LLC";
+				TargetAttributes = {
+					FCA8BB851CB1F970003C3652 = {
+						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = FCA8BB811CB1F970003C3652 /* Build configuration list for PBXProject "ObjectiveTea" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCA8BB7D1CB1F970003C3652;
+			productRefGroup = FCA8BB871CB1F970003C3652 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCA8BB851CB1F970003C3652 /* ObjectiveTea */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCA8BB841CB1F970003C3652 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCA8BB961CB1F970003C3652 /* LaunchScreen.storyboard in Resources */,
+				FCA8BB931CB1F970003C3652 /* Assets.xcassets in Resources */,
+				FCA8BB911CB1F970003C3652 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCA8BB821CB1F970003C3652 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCA8BBA21CB1F9F9003C3652 /* StoresViewController.swift in Sources */,
+				FCA8BBA01CB1F9CF003C3652 /* BubbleTeaCup.swift in Sources */,
+				FCA8BB8A1CB1F970003C3652 /* AppDelegate.swift in Sources */,
+				FCA8BBAB1CB2119B003C3652 /* TabBarController.swift in Sources */,
+				FC85E8921CB32E11007448DF /* Flavor.swift in Sources */,
+				FC85E8941CB331B2007448DF /* FlavorCell.swift in Sources */,
+				FCA8BB9E1CB1F9AE003C3652 /* OrderViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FCA8BB8F1CB1F970003C3652 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCA8BB901CB1F970003C3652 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCA8BB941CB1F970003C3652 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCA8BB951CB1F970003C3652 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCA8BB981CB1F970003C3652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCA8BB991CB1F970003C3652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCA8BB9B1CB1F970003C3652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ObjectiveTea/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.ObjectiveTea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FCA8BB9C1CB1F970003C3652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ObjectiveTea/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.ObjectiveTea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCA8BB811CB1F970003C3652 /* Build configuration list for PBXProject "ObjectiveTea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCA8BB981CB1F970003C3652 /* Debug */,
+				FCA8BB991CB1F970003C3652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCA8BB9A1CB1F970003C3652 /* Build configuration list for PBXNativeTarget "ObjectiveTea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCA8BB9B1CB1F970003C3652 /* Debug */,
+				FCA8BB9C1CB1F970003C3652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCA8BB7E1CB1F970003C3652 /* Project object */;
+}
